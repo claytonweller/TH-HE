@@ -1,0 +1,23 @@
+{
+  "name": "github-api",
+  "version": "1.0.0",
+  "description": "'Coding Challenge for Travelers Haven/Hotel Engine'",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "export ENVIRONMENT=test && mocha --exit"
+  },
+  "author": "Clayton Weller",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9"
+  }
+}
