@@ -4,6 +4,8 @@ function manageApp() {
 }
 
 function urlToObject(url) {
+  // There is DEFINITELY a better way to do this.
+  // TODO add more logic for a robust breakdown of urls
   let urlSections = url.split("/");
   return {
     owner: urlSections[3],
