@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SpeedBack</title>
+    <title>Clayton's HE coding challenge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -26,14 +26,24 @@
     >
       <h1>Hotel Engine API</h1>
       <h3>We have to know about pull requests!</h3>
-      <form style="padding-top:10px">
+      <form style="padding-top:10px" id="urlform">
         <label>
           GitHub Repo Url <br /><input
+            id="url-input"
             type="url"
             placeholder="...https://github.com/hapijs/hapi"
           />
         </label>
+        <div>
+          <button id="get-button">Get Request</button>
+          <button id="post-button">Post Request</button>
+        </div>
       </form>
+      <div style="color:lightcoral" id="error"></div>
+      <h2 style="margin-top: 10px">Pull Requests</h2>
+      <ul id="pulls">
+        <li>number - user - commit count - comment count</li>
+      </ul>
     </main>
 
     <footer>
@@ -45,6 +55,6 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

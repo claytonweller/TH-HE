@@ -1,7 +1,7 @@
 "use strict";
-const { router } = require("./router");
+const { router, findThePulls } = require("./router");
 
-module.exports = { router };
+module.exports = { router, findThePulls };
 
 /* 
   For this API this is a might be a bit of a superfluous step.

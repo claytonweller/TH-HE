@@ -1,3 +1,8 @@
+/* 
+  I just reused the CSS from another app... 
+  didn't want this thing to look like garbage.
+*/
+
 body * {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -46,8 +51,8 @@ button {
   width: 100%;
   color: white;
   font-family: "Oswald", sans-serif;
-  font-size: 34px;
-  padding: 10px;
+  font-size: 20px;
+  padding: 5px;
   border: 1px solid rgb(95, 25, 25);
   border-radius: 5px;
   transition-duration: 100ms;
