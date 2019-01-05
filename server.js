@@ -4,7 +4,7 @@ const express = require("express");
 const morgan = require("morgan");
 
 const { router: githubRouter } = require("./github");
-
+const { router: affirmationRouter } = require("./affirmations");
 const { PORT } = require("./config");
 
 const app = express();
@@ -25,6 +25,7 @@ app.use(function(req, res, next) {
 app.use(express.static("public"));
 
 app.use("/api/github/", githubRouter);
+app.use("/api/affirmation/", affirmationRouter);
 
 app.get("/api/test", (req, res) => {
   console.log("boop");
@@ -65,5 +66,7 @@ function closeServer() {
 if (require.main === module) {
   runServer().catch(err => console.error(err));
 }
+
+// Wer're exporting these for testing purposes
 
 module.exports = { app, runServer, closeServer };
