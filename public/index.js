@@ -5,11 +5,12 @@ function manageApp() {
 
 function urlToObject(url) {
   // There is DEFINITELY a better way to do this.
+  // But since this is a back end focused thing I won't spend time on it right now.
   // TODO add more logic for a robust breakdown of urls
   let urlSections = url.split("/");
   return {
-    owner: urlSections[3],
-    repo: urlSections[4]
+    owner: urlSections[urlSections.length - 2],
+    repo: urlSections[urlSections.length - 1]
   };
 }
 
