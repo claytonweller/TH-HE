@@ -46,9 +46,12 @@ describe("Git hub Pulls", function() {
           "commitCount",
           "commentCount"
         );
+        console.log(res[0]);
         expect(res[0].number).to.be.a("number");
         expect(res[0].commitCount).to.be.a("number");
+        expect(res[0].commitCount).to.equal(1);
         expect(res[0].commentCount).to.be.a("number");
+        expect(Res[0].commentCount).to.equal(2);
         expect(res[0].user).to.be.a("string");
       });
 
